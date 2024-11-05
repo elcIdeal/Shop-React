@@ -20,6 +20,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .product img {
@@ -28,22 +29,26 @@
 
 .product .description {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .product:hover {
-  transition: 0.3s ease-in;
+  transition: 0.9s ease-in;
   cursor: pointer;
+  -webkit-transition: 0.9s ease-in;
+  -moz-transition: 0.9s ease-in;
+  -ms-transition: 0.9s ease-in;
+  -o-transition: 0.9s ease-in;
 }
 
 .addToCartBttn {
   background-color: transparent;
   border: 2px solid rgb(19, 19, 19);
-  min-width: 100px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 8px 15px;
   border-radius: 15px;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .addToCartBttn:hover {
